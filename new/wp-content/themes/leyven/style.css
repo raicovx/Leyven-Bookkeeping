@@ -1,0 +1,881 @@
+/*
+Theme Name: Leyven Theme
+Theme URI: http://www.archmages.com
+Description: Theme for Leyven
+Author: DragonEdge
+Author URI: http://www.archmages.com
+Version: 1.0
+*/
+
+/* =WordPress Core -------------------------------------------------------------- */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* End of Wordpress Core CSS */
+/* ---------------------------------------------------------------------------------------------------- */
+/* Start of custom CSS */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* start width class */
+
+.the_width {
+	width: 1190px;
+}
+
+/* end width class */
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* start fonts css */
+
+@font-face {
+    font-family: 'verdanab';
+    src: url('fonts/verdanab.eot');
+    src: url('fonts/verdanab.eot?#iefix') format('embedded-opentype'),
+         url('fonts/verdanab.woff') format('woff'),
+         url('Dfonts/verdanab.ttf') format('truetype'),
+         url('fonts/verdanab.svg#DearestRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* end of font css */
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body{  
+    font-family: Arial, Sans-serif;
+    font-size: 12px;
+    color: #000000;
+	position: relative;
+	height: 100%;
+	background-color: #e0e0e0;
+}
+
+blockquote {
+	margin: 5px 0 0 5px;
+    padding-left: 5px;
+}
+
+#nonFooter
+{
+	position: relative;
+	min-height: 50%;
+}
+
+a {
+	outline: none;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #0f76bb;
+}
+ 
+a:hover{
+    color: #0f76bb;
+}
+ 
+h1 {
+    font-size: 54px;
+}
+ 
+h3 {
+    font-size: 24px;
+}
+ 
+#wrapper{
+    margin: 0 auto;
+    text-align: left;
+	padding-bottom: 1em;
+}
+ 
+#header{
+    background-color: #FF5A00;
+    border-bottom: 10px solid #FF8400;
+    color: #FFFFFF;
+    height: 165px;
+    width: 100%;
+	position: relative;
+}
+ 
+#blog {
+    float: left;
+    margin: 0 auto;
+    width: 70%;
+}
+ 
+.sidebar {
+    float: right;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.sidebar li{
+    list-style: none;
+}
+ 
+#footer{
+    clear: both;
+    text-align: center;
+    height: 50px;
+	color: #fff;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* start nav test */
+
+#the_nav_line {
+	background-image: url("images/menu_background.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 37px;
+    width: 100%;
+    z-index: 8999;
+}
+
+#the_nav_line .the_nav {
+	width: 1190px;
+}
+
+#the_nav_line ul {
+	list-style-type: none;
+	list-style: none;
+	z-index: 8999;
+}
+
+#the_nav_line li {
+	background-image: url("images/menu_liner.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 37px;
+    margin-top: 0;
+    width: auto;
+    z-index: 8999;
+}
+
+#the_nav_line li.first-menu-item {
+	background-image: none;
+}
+
+#the_nav_line a {
+	z-index: 8999;
+}
+
+#the_nav_line ul.nav {
+	height: 37px;
+    list-style-type: none;
+    position: absolute;
+    width: auto;
+}
+
+#the_nav_line ul.nav ul {
+	background-image: url("images/nav-bg.jpg");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 37px;
+    z-index: 8999;
+	margin-left: 20px;
+}
+
+#the_nav_line ul.nav ul li {
+	display:inline-block;
+	text-align: justify;
+	background-image: url("images/menu_background.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 37px;
+    z-index: 8999;
+	width: 100%;
+	min-width: 150px;
+}
+
+#the_nav_line ul.nav a {
+	line-height: 37px;
+}
+
+#the_nav_line ul.nav  .current-menu-item {
+	
+}
+
+#the_nav_line>li {
+	float: left;
+	line-height: 37px;
+}
+
+ul.nav>li	{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul.nav li a {
+	display: block;
+    line-height: 2em;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.inside_nav {
+	position: relative;
+    width: 960px;
+	height: 37px;
+	background-image: url("images/nav-bg.jpg");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+/* end nav test */
+
+
+
+/* navigation css */
+
+ul.nav > li {
+
+}
+
+ul.nav ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+
+ul.nav ul li a {
+
+}
+
+.the_nav .menu-home-menu-container {
+}
+
+/* Main menu ------------------------------------------*/
+
+ul.nav {
+	font-family: 'Arial',serif;
+    font-size: 16px;
+    height: 37px;
+    line-height: 37px;
+}
+ul.nav > li > a {
+	color: #fff;
+	font-weight: bold;
+}
+ul.nav > li:hover > a {
+	color: #fff;
+}
+
+/* Start Submenu CSS */
+ul.nav li ul {
+}
+
+ul.nav li:hover ul {
+	display: block;
+}
+
+ul.nav li:hover {
+}
+
+ul.nav li:hover a {
+	color: #fff;
+}
+
+ul.nav li ul li:hover a {
+	color: #fff;
+}
+
+ul.nav li:hover ul li ul, ul.nav li:hover ul li ul li ul, ul.nav li:hover ul li ul li ul li ul, ul.nav li:hover ul li ul li ul li ul li ul, ul.nav li:hover ul li ul li ul li ul li ul li ul{
+	display: none;
+	width: 10em;
+}
+
+ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li ul li:hover ul, ul.nav li ul li ul li ul li ul li:hover ul, ul.nav li ul li ul li ul li ul li ul li:hover ul {
+	display: inline;
+	width: 10em;
+	position: absolute;
+	left: 9em;
+	margin-top: -2em;
+}
+
+
+
+/* end navigation css */
+/* ---------------------------------------------------------------------------------------------------- */
+/* start header css */
+
+#inside_header {
+	background-image: url("images/logo-background.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 165px;
+    position: relative;
+}
+
+#the_logo {
+	bottom: 0;
+    color: #000000;
+    height: 100%;
+    left: 12%;
+    position: absolute;
+    width: 76%;
+}
+
+.the_site_name {
+	float: left;
+    height: 100%;
+    width: 32%;
+}
+
+.the_site_name a img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	float: left;
+}
+
+#the_site_title {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 25%;
+}
+
+#site-description {
+	bottom: 10%;
+    position: absolute;
+	color: #575971;
+}
+
+.the_site_right {
+	float: left;
+    height: 100%;
+    position: relative;
+    width: 42%;
+}
+
+#the_site_right_image img {
+	bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+#the_site_right_image {
+	bottom: 0;
+    height: auto;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+#the_site_right_call {
+	color: #FF5A00;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+/* end header css */
+
+/* start middle css */
+
+#the_mid {
+	min-height: 660px;
+	z-index: 8000;
+}
+
+.the_main {
+	padding-left: 25px;
+	z-index: 8000;
+}
+
+#the_heading {
+	margin-bottom: 10px;
+	z-index: 8000;
+}
+
+.the_heading {
+    height: 50px;
+    position: relative;
+    text-align: left;
+	padding-left: 20px;
+	z-index: 8000;
+}
+
+.the_heading h1 {
+	bottom: 0;
+    color: #0F76BB;
+    font-family: times new roman;
+    font-size: 25px;
+    line-height: 30px;
+    position: absolute;
+	margin-bottom: 5px;
+	z-index: 8000;
+}
+
+.post h3 a {
+	color: #000;
+}
+
+/* end middle css */
+/* ---------------------------------------------------------------------------------------------------- */
+/* start footer css */
+
+.the_footer_menu div {
+	width: 960px;
+}
+
+.the_footer_menu ul.menu, .the_footer_menu ul.menu ul {
+	list-style: none;
+	text-align: center
+}
+
+.the_footer_menu ul.menu li {
+	width:auto;
+}
+
+.the_footer_menu ul.menu > li {
+	vertical-align: top;
+    display: inline-block;
+}
+
+.the_footer_menu ul.menu li a {
+	display: block;
+	padding: 0 1em;
+	text-decoration: none;
+}
+
+.the_footer_menu ul.menu ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+
+.the_footer_menu ul.menu ul li a {
+	width: 100%;
+}
+
+.the_footer_menu ul.menu {
+	font-family: Arial;
+    font-size: 13px;
+    height: 37px;
+    line-height: 37px;
+    width: 960px;
+	clear: both;
+}
+
+.the_footer_menu ul.menu > li > a {
+	color: #fff;
+}
+
+.the_footer_menu ul.menu > li:hover > a {
+	color: #fff;
+}
+
+#footer .menu-item {
+	background-image: url("images/menu_liner.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+	float: left;
+	display: inline-block;
+}
+#footer  .first-menu-item {
+	background: none;
+}
+#footer .menu-item-home {
+	border: none;
+}
+
+#footer .the_footer_menu {
+}
+
+#footer_content {
+	position: relative;
+}
+
+#footer a{
+	color: #fff;
+}
+
+.the_footer_line {
+	background-color: #FF5A00;
+}
+
+.the_footer_below {
+	width: 1200px;
+	height: 200px;
+	background-color: #fff;
+}
+
+/* end footer css */
+/* ---------------------------------------------------------------------------------------------------- */
+/* start the clear */
+
+.the_clear {
+	clear: both;
+    height: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+#footer .the_clear {
+	width: 100%;
+	clear: both;
+}
+
+.footer_the_clear {
+	width: 100%;
+	height: 20px;
+	clear: both;
+}
+
+/* end the clear */
+
+/* start full width page css */
+
+.page-template-full_width_page-php #blog {
+	width: 100%;
+	padding: 0;
+}
+
+/* end full width page css */
+
+/* start page-template-default css */
+
+.page-template-default .the_main .post h3 a {
+	font-size: 18px;
+    line-height: 40px;
+}
+
+
+.page-template-default .the_main .the_clear {
+	clear: both;
+    height: 5px;
+    visibility: hidden;
+    width: 100%;
+}
+
+.page-template-default .big_black {
+	color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px 0;
+	clear: both;
+	width: 100%;
+}
+
+.page-template-default .the_p {
+	color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 10px 0;
+	clear: both;
+	width: 100%;
+	text-align: justify;
+}
+
+.page-template-default .the_p p{
+	text-align: justify;
+}
+
+.page-template-default .big_blue {
+	color: #0F76BB;
+    font-size: 16px;
+    font-weight: bold;
+	float:left;
+	clear: both;
+	width: 100%;
+}
+
+.page-template-default .the_table {
+	clear: both;
+    float: left;
+    padding: 20px 0;
+    width: 100%;
+	font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.page-template-default .the_table table {
+	width: 80%;
+	float: left;
+	clear: both;
+}
+
+.page-template-default .the_table td:first-child {
+	width: 65%;
+}
+
+.page-template-default .the_table td:first-child+td {
+	width: 35%;
+}
+
+.page-template-default .the_more {
+	width: 70%;
+	margin-top: 50px;
+}
+
+.page-template-default .the_more a {
+	float: right;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.page-template-default .the_back {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.page-template-default .the_back a {
+	float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* end page-template-default css */
+/* start page-template-page-left-php css */
+
+.page-template-page-left-php #blog {
+    float: right;
+    margin: 0 auto;
+    width: 70%;
+	padding: 0;
+}
+
+.page-template-page-left-php .sidebar {
+    float: left;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 25%;
+	padding-right: 5%;
+}
+
+.page-template-page-left-php .sidebar .sidebar_center ul li {
+	font-weight: bold;
+}
+
+.page-template-page-left-php {
+}
+
+.page-template-page-left-php .blue {
+	font-weight: bold;
+	font-size: 20px !important;
+}
+
+.page-template-page-left-php .big_black {
+	color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px 0;
+	clear: both;
+	width: 100%;
+}
+
+.page-template-page-left-php .the_p {
+	color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 10px 0;
+	clear: both;
+	width: 100%;
+	text-align: justify;
+}
+
+.page-template-page-left-php .the_p p{
+	text-align: justify;
+}
+
+.page-template-page-left-php .big_blue {
+	color: #0F76BB;
+    font-size: 16px;
+    font-weight: bold;
+	float:left;
+	clear: both;
+	width: 100%;
+}
+
+.page-template-page-left-php .b1 {
+	font-size: 20px;
+}
+
+.page-template-page-left-php .b2 {
+	font-size: 16px;
+}
+
+.page-template-page-left-php .the_p a {
+	text-decoration: underline;
+}
+
+.page-template-page-left-php .textwidget .sidebar_center ul li {
+    font-size: 16px;
+}
+
+.page-template-page-left-php .textwidget .sidebar_center ul li a {
+    color: #2b3856 !important;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* end page-template-page-left-php css */
+/* start sidebar css */
+.textwidget {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textwidget .sidebar_center ul li {
+	font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+	color: #808080;
+}
+
+.widget-title {
+	text-align: center;
+}
+
+.textwidget .sidebar_center ul li.blue {
+	color: #0f76bb;
+}
+
+.textwidget .sidebar_center ul li a.bunderline {
+	color: #000;
+	text-decoration: underline;
+}
+
+/* end sidebar css */
+/* start images css */
+
+a img {
+	border-style: none;
+}
+
+/* end images css */
+/* start pagelinks css */
+
+.page_linker {
+	clear: both;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.page_linker .page_linker_inside {
+	width: auto;
+	float: right;
+	clear: both;
+}
+
+.postmetadata {
+	width: 100%;
+	clear: both;
+}
+
+/* end pageling css */
+
+/* start standard css */
+
+
+/* end standard css */
+
+
