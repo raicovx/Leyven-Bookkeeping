@@ -15,7 +15,8 @@ if ( is_404() ) {
 		<title><?php bloginfo('name'); ?><?php if(is_home()) { bloginfo('description');} else { wp_title('|'); } ?></title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_bloginfo('template_directory'); ?>/materialize.min.css"/>
+        <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<!-- <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"> -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -32,6 +33,7 @@ if ( is_404() ) {
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
+        <script type="text/javascript" src="<?php echo get_bloginfo('template_directory');?>/js/materialize.min.js"></script>
 	</head>
 	<body <?php body_class($class); ?>>
 		<div id="nonFooter">
