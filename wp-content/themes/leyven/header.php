@@ -15,7 +15,7 @@ if ( is_404() ) {
 		<title><?php bloginfo('name'); ?><?php if(is_home()) { bloginfo('description');} else { wp_title('|'); } ?></title>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_bloginfo('template_directory'); ?>/materialize.min.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_bloginfo('template_directory'); ?>/css/materialize.min.css"/>
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<!-- <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"> -->
@@ -39,8 +39,8 @@ if ( is_404() ) {
 	<body <?php body_class($class); ?>>
 		<div id="nonFooter">
 			<div id="wrapper">
-				<div id="header row col s12">
-					  <a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/top-logo.png" alt="logo" /></a>
+				<div id="header" class="row">
+					<div class="topBar">  <div class="col s12 m12 l6"><a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/top-logo.png" alt="logo" /></a></div><div class="col s12 m12 l6 headerText">  <a class="waves-effect waves-light btn-large phoneBtn" href="tel:0414 899 487"><i class="mdi-communication-call left"></i>0414 899 487</a><a class="waves-effect waves-light btn-large emailBtn" href="mailto:eve@leyven.com.au"><i class="mdi-communication-email left"></i>eve@leyven.com.au</a></div></div>
 						
                 <nav class="valign-wrapper">
 				<div id="the_nav_line valign">

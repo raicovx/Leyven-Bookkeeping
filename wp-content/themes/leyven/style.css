@@ -129,7 +129,7 @@ a img.aligncenter {
 }
 
 @font-face {
-    font-family: 'Eraslght';
+    font-family: 'Eraslg';
     src: url('fonts/Eraslght.eot');
     src: url('fonts/Eraslght.eot?#iefix') format('embedded-opentype'),
          url('fonts/Eraslght.woff') format('woff'),
@@ -214,14 +214,86 @@ h3 {
 }
  
 #header{
-    background-color: #FF5A00;
-    border-bottom: 10px solid #FF8400;
-    color: #FFFFFF;
+   /* border-bottom: 10px solid #FF8400;*/
+    background-color: #FFFFFF;
     height: 165px;
     width: 100%;
 	position: relative;
 }
- 
+#header .headerText{
+    margin-top: 25px;
+    height: 101px;
+    padding-left: 5%;
+}
+#header i{
+    font-size: 20px!important;  
+    margin-right: 5px!important;
+    width:5%!important;
+    padding-left: 15px!important;
+    padding-right:15px;
+}
+#header .headerText .emailBtn, #header .headerText .phoneBtn{
+    background: #ff5a00;
+    color: #FFF;
+    margin-left: 25px;
+    padding:0 20px;   
+    top:35px;
+}
+@media (max-width:1320px){
+     #header .headerText{
+         padding-left:1%;
+     }
+}
+@media (max-width:1191px){
+     #header .headerText{
+         padding-left:0;
+         margin-left: -1%;
+     }
+}
+@media (max-width:992px){
+    body{
+        overflow-x:hidden;   
+    }
+     #header .headerText{
+         padding-left:0;
+         margin-left: 0;
+         margin-top: 0;
+         top: 0;
+     }
+    #header{
+        height: auto;   
+    }
+      #header .topBar{
+        height:310px;
+        position:relative;
+    }
+    #header .headerText .emailBtn, #header .headerText .phoneBtn{
+        top:15px;
+        margin: 10px 0 10px 1%;
+        width:99%;
+    }
+}
+@media (max-width:594px){
+    body{
+        overflow-x: hidden;   
+    }
+     #header {
+         height:auto;
+     }
+    #header .topBar{
+        height:290px;
+        position:relative;
+    }
+     #header .headerText .emailBtn, #header .headerText .phoneBtn{
+        top:15px;
+        margin: 10px 0 5px 3%;
+        width:98%;
+    }
+}
+/* grey background on buttons issue override */
+.home .left{
+   background:none!important; 
+}   
 #blog {
     margin: 0 auto;
     width: 100%;
@@ -261,10 +333,12 @@ h3 {
 	width: 1190px;
 }
 #slide-out{
-    z-index:1000;   
+    z-index:1000; 
+    color:#3e3e3e;
 }
-.button-collapse{
-    z-index:999;   
+.button-collapse i{
+    z-index:999; 
+    color:#FFF;
 }
 #the_nav_line ul {
 	list-style-type: none;
