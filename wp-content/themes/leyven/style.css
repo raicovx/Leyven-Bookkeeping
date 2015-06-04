@@ -250,33 +250,36 @@ h3 {
 /* start nav test */
 
 #the_nav_line {
-	background-image: url("images/menu_background.png");
     background-position: center bottom;
     background-repeat: repeat-x;
     height: 37px;
     width: 100%;
-    z-index: 8999;
+    z-index: 998;
 }
 
 #the_nav_line .the_nav {
 	width: 1190px;
 }
-
+#slide-out{
+    z-index:1000;   
+}
+.button-collapse{
+    z-index:999;   
+}
 #the_nav_line ul {
 	list-style-type: none;
 	list-style: none;
-	z-index: 8999;
+	z-index: 998;
 }
 
 #the_nav_line li {
-	background-image: url("images/menu_liner.png");
     background-position: left center;
     background-repeat: no-repeat;
     float: left;
     height: 37px;
     margin-top: 0;
     width: auto;
-    z-index: 8999;
+    z-index: 998;
 }
 
 #the_nav_line li.first-menu-item {
@@ -284,7 +287,7 @@ h3 {
 }
 
 #the_nav_line a {
-	z-index: 8999;
+	z-index: 998;
 }
 
 #the_nav_line ul.nav {
@@ -295,22 +298,20 @@ h3 {
 }
 
 #the_nav_line ul.nav ul {
-	background-image: url("images/nav-bg.jpg");
     background-position: center bottom;
     background-repeat: repeat-x;
     height: 37px;
-    z-index: 8999;
+    z-index: 998;
 	margin-left: 20px;
 }
 
 #the_nav_line ul.nav ul li {
 	display:inline-block;
 	text-align: justify;
-	background-image: url("images/menu_background.png");
     background-position: center bottom;
     background-repeat: repeat-x;
     height: 37px;
-    z-index: 8999;
+    z-index: 998;
 	width: 100%;
 	min-width: 150px;
 }
@@ -331,6 +332,8 @@ h3 {
 ul.nav>li	{
     padding-left: 20px;
     padding-right: 20px;
+    height: 100%;
+    padding-top: 16px;
 }
 
 ul.nav li a {
@@ -343,8 +346,7 @@ ul.nav li a {
 .inside_nav {
 	position: relative;
     width: 960px;
-	height: 37px;
-	background-image: url("images/nav-bg.jpg");
+	height: 64px;
     background-position: center bottom;
     background-repeat: repeat-x;
 }
@@ -362,7 +364,8 @@ ul.nav > li {
 ul.nav ul {
 	position: absolute;
 	display: none;
-	z-index: 999;
+	z-index: 998;
+    height:64px;
 }
 
 ul.nav ul li a {
@@ -377,8 +380,14 @@ ul.nav ul li a {
 ul.nav {
 	font-family: 'Arial',serif;
     font-size: 16px;
-    height: 37px;
-    line-height: 37px;
+    height: 64px;
+    line-height: 32px;
+    width: 94%;
+    margin-left: 5%;
+}
+/* Materialize Menu Override */
+nav{
+    background: #ff5a00!important;   
 }
 ul.nav > li > a {
 	color: #fff;
@@ -425,16 +434,6 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 /* end navigation css */
 /* ---------------------------------------------------------------------------------------------------- */
 /* start header css */
-
-#inside_header {
-	background-image: url("images/header_white.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    height: 165px;
-    position: relative;
-	width: 1200px;
-}
-
 #the_logo {
 	bottom: 0;
     color: #000000;
@@ -506,17 +505,17 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 
 #the_mid {
 	min-height: 660px;
-	z-index: 8000;
+	z-index: 50;
 }
 
 .the_main {
-	z-index: 8000;
+	z-index: 50;
 }
 
 #the_heading {
 	margin-bottom: 10px;
     margin-top: 10px;
-    z-index: 8000;
+    z-index: 50;
 	background-color: #e1e2e6;
 }
 
@@ -524,7 +523,7 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
     height: 50px;
     position: relative;
     text-align: left;
-	z-index: 8000;
+	z-index: 50;
 	height: 300px;
 	background-color: #ffffff;
 	width: 960px;
