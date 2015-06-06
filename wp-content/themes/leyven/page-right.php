@@ -12,19 +12,21 @@
                  include('slides/home/slides-home.php'); 
                     }else if($title == "Bookkeeping"){
                         include('slides/bookkeeping/slides-bookkeeping.php'); 
-                    };
-                        ?>
+                        }; ?>
             </div>
 		</div>
 	</div>
 	<div class="the_main the_width">
 		<div class="center_container">
-			<div class="the_clear"></div>
+			<div class="row">
 			<div id="blog">
 				<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 					<div class="post">
 						<div class="entry">
 							<?php the_content(); ?>
+                            <div class="scalingSideBar col s12 m4 l4 card noMarginTop">
+			<?php get_sidebar( "right" ); ?>
+                </div>
 							<div class="postmetadata">
 								<?php 	
 									wp_link_pages(array(
@@ -38,7 +40,6 @@
 									);
 								?>
 							</div>
-							<div class="the_clear"></div>
 						</div>
 					</div>
 				<?php endwhile; ?>
@@ -47,8 +48,8 @@
 				</div>
 			<?php endif; ?>
 			</div>
-			<?php get_sidebar( "right" ); ?>
-			<div class="the_clear"></div>
+            
+        </div>
 		</div>
 	</div>
 <script> $('.slider').slider({full_width: true, height:400, indicators: false});</script>

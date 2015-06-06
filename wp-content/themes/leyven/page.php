@@ -12,8 +12,10 @@
                  include('slides/home/slides-home.php'); 
                     }else if($title == "Bookkeeping"){
                         include('slides/bookkeeping/slides-bookkeeping.php'); 
-                    };
-                        ?>
+                      
+                                            
+                        ?>  <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/leyven/css/bookkeeping.css" />
+                <?php };?>
             </div>
 		</div>
 	</div>

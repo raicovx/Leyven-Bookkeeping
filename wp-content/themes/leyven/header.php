@@ -19,6 +19,8 @@ if ( is_404() ) {
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_bloginfo('template_directory'); ?>/css/materialize.min.css"/>
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+        <?php if(get_the_title() == "Bookkeeping"){ ?>
+        <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory');?>/css/bookkeeping.css"> <?php }; ?>
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<!-- <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"> -->
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
