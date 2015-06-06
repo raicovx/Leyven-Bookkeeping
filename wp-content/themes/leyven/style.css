@@ -1186,6 +1186,9 @@ a img {
 .btn:hover i, a:hover{
     color:#e8e8e8;
 }
+a:link, a:visited{
+       color:#FFF;
+}
 .home .left p{
     font: 300 15px 'Roboto', sans-serif;
     margin-bottom: 10px;
@@ -1581,4 +1584,12 @@ margin-bottom: 10px;
    .leftCardHome,.rightCardHome{
         margin-left:-10px!important;   
    }
+    p.contact{
+        text-align:center;
+        
+    }
+    .btn{
+        width:90%;
+        margin-left:5%;
+    }
 }

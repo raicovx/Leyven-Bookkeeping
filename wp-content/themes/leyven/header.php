@@ -6,7 +6,7 @@ if ( is_404() ) {
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <!--[if lte IE 8]><script src="<?php echo get_bloginfo('template_directory');?>/js/html5shiv.js"></script><![endif]-->
 		<style type="text/css">
 			.the_login_pop, .logged-in #button_top a , .button2, .button1 {
