@@ -806,7 +806,8 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 
 /* start page-template-default css + Now includes Slider CSS */
 .slider .slides{
-    transition:width:0.5s, height 0.5s;   
+    transition:width:0.5s, height 0.5s;
+    background:#FFF;
 }
 .custom-positioned-caption{
     top: 80%!important;
@@ -825,7 +826,7 @@ img#home.one{
     background-position: 0 -10px!important;   
 }
 img#bookkeeping.one{
-    background-position: 0 -120px!important;   
+      /* background-position: center -90px!important;*/
 }
 .caption h5#home{
     margin-left: 10%;
@@ -1425,8 +1426,14 @@ margin-bottom: 10px;
 /* page right css end */
 /* Media Q's */
     /*Slider Fixes */
+@media (max-width: 1300px){
+    .caption h5#bookkeeping{
+       font: 1.2rem 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+}
 @media (max-width: 1040px){
-    
+
  .caption h5#home{
        margin-left: 7%;
  }
