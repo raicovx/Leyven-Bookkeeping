@@ -6,15 +6,7 @@
 <?php get_header(); ?>
 	<div id="the_heading">
 		<div class="the_heading">
-			<div class="slider">
-                 <?php $title = get_the_title();
-                    if (is_front_page()) {
-                 include('slides/home/slides-home.php'); 
-                    }else if($title == "Bookkeeping"){
-                        include('slides/bookkeeping/slides-bookkeeping.php'); 
-                    };
-                        ?>
-            </div>
+			<?php $key="custom_tag_header"; $slider = get_post_meta($post->ID, $key, true); echo do_shortcode($slider); ?>
 		</div>
 	</div>
 	<div class="the_main the_width">
@@ -51,5 +43,4 @@
 			<div class="the_clear"></div>
 		</div>
 	</div>
-<script> $('.slider').slider({full_width: true, height:400, indicators: false});</script>
 <?php get_footer(); ?>
