@@ -6,6 +6,8 @@ if ( is_404() ) {
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lte IE 8]><script src="<?php echo get_bloginfo('template_directory');?>/js/html5shiv.js"></script><![endif]-->
 		<style type="text/css">
 			.the_login_pop, .logged-in #button_top a , .button2, .button1 {
 				behavior: url('<?php echo get_bloginfo('url'); ?>/border-radius.htc');
@@ -40,10 +42,10 @@ if ( is_404() ) {
 		<div id="nonFooter">
 			<div id="wrapper">
 				<div id="header" class="row">
-					<div class="topBar">  <div class="col s12 m12 l6"><a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/top-logo.png" alt="logo" /></a></div><div class="col s12 m12 l6 headerText">  <a class="waves-effect waves-light btn-large phoneBtn" href="tel:0414 899 487"><i class="mdi-communication-call left"></i>0414 899 487</a><a class="waves-effect waves-light btn-large emailBtn" href="mailto:eve@leyven.com.au"><i class="mdi-communication-email left"></i>eve@leyven.com.au</a></div></div>
+					<div class="topBar">  <div class="col s12 m12 l6"><a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/top-logo.png" alt="logo" /></a></div><div class="col s12 m12 l6 headerText">  <a class="waves-effect waves-light btn-large phoneBtn" href="tel:0414 899 487"><i class="mdi-communication-call left comm"></i>0414 899 487</a><a class="waves-effect waves-light btn-large emailBtn" href="mailto:eve@leyven.com.au"><i class="mdi-communication-email left comm"></i>eve@leyven.com.au</a></div></div>
 						
-                <nav class="valign-wrapper">
-				<div id="the_nav_line valign">
+                <nav>
+				<div id="the_nav_line">
 					
 						<div class="inside_nav nav-wrapper">
 							<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_class' => 'nav center hide-on-med-and-down', 'theme_location' => 'primary-menu' ) ); ?>
