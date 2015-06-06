@@ -812,6 +812,7 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
     width: 96%!important;
     height: 64px;
     padding:10px;
+    background-color:rgba(255,255,255,0.85)!important;
     
 }
  .caption h5#home, .caption h6#home{
