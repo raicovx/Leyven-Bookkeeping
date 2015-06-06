@@ -216,12 +216,12 @@ h3 {
 #header{
    /* border-bottom: 10px solid #FF8400;*/
     background-color: #FFFFFF;
-    height: 165px;
+    height: 170px;
     width: 100%;
 	position: relative;
 }
 #header .headerText{
-    margin-top: 25px;
+    margin-top: 15px;
     height: 101px;
     padding-left: 5%;
 }
@@ -594,7 +594,7 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 }
 
 .the_heading {
-    height: 50px;
+    height: 400px!important;
     position: relative;
     text-align: left;
 	z-index: 50;
@@ -804,8 +804,30 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 
 /* end full width page css */
 
-/* start page-template-default css */
+/* start page-template-default css + Now includes Slider CSS */
 
+.custom-positioned-caption{
+    top: 80%!important;
+    left: 2%!important;
+    width: 96%!important;
+    height: 64px;
+    padding:10px;
+    
+}
+ .caption h5#home, .caption h6#home{
+    width:43%!important;
+}
+.caption h5#home{
+    margin-left: 10%   
+}
+.caption h6#home{
+ line-height:2.5rem;  
+    font-size:18px;
+}
+
+#bookkeeping h5{
+    width:100%!important;   
+}
 .page-template-default .the_main .post h3 a {
 	font-size: 18px;
     line-height: 40px;
