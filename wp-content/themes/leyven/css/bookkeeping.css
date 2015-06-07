@@ -1,4 +1,7 @@
- .titleContainer#bookkeeping{
+.leyven-orange{
+    background-color:#FF5A00;   
+}
+.titleContainer#bookkeeping{
     width:100%;
     padding 10px;
      top:0;
@@ -17,16 +20,78 @@
     height: 46px;
 }
 .bookkeepingMainCard{
-    padding:0!important;   
+    padding:0!important; 
+    margin-left: 15px!important;
 }
-.bookkeepingMainCard p{
-    padding: 0 10px;   
+.header-Card-Text{
+       font:500 15px "Roboto", sans-serif;
+}
+.bookkeepingTitleCard{
+       padding:15px!important;
+       margin-top:30px;
+}
+.bookkeepingContent{
+    font: 400 16px "Roboto", sans-serif;
+    margin: 15px 0;
+    color:#3e3e3e;
+}
+.titleServices{
+    font: 500 22px "Roboto", sans-serif;
+    padding-left: 15px; 
+}
+.servicesInc li{
+    background: #FF5A00;
+    color: #FFF;
+    padding: 5px 0px!important;
+    text-align: center;
+    height: auto;
+}
+.servicesInc li:nth-child(odd) {
+    margin: 0.3rem 0 0.2rem 7%!important;
+}
+.servicesInc li:nth-child(even) {
+    margin: 0.3rem 0 0.2rem 1%!important;
+}
+
+.servicesInc{
+    margin-left: -2%;
+    width:102%!important;
+    margin-bottom: 15px!important;
+}
+
+.bookkeepingMainCard p,.bookkeepingMainCard ul, .bookkeepingMainCard h3{
+    padding: 0 10px!important;   
+}
+.bookkeepingContent {
+    font: 400 15px "Roboto",sans-serif;
+    margin: 15px 0;
+}
+
+.bookkeepingMainCard ul li{
+    font: 300 16px "Roboto",sans-serif;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background: #ff5A00;
+    height: auto;
+    margin: 0 0 5px 0;
+    width: 100%;
+    border-radius: 10px;
+    color: #FFF;
+    text-align: left;
+    padding-top: 20px;
+}   
+.bookkeepingMainCard ul li:before{
+    font-family: "Material-Design-Icons";   
+    content: "\e7da";
+    color: #FFF; 
+    padding-right: 15px;
 }
 .noMarginTop {
     margin-top:0!important;
 }
 .scalingSideBar{
     padding:0!important;
+    margin-left:15px!important;
 }
 .page-template-page-right-php .widgets-content ol li:before {
     font-family: 'Material-Design-Icons';
@@ -34,4 +99,7 @@
     padding-right: 5px;
     font-size: 21px;
     color: #43a047;
+}
+.page-template-page-right-php  .center_container {
+	margin: 0px 2% 0 5%;
 }

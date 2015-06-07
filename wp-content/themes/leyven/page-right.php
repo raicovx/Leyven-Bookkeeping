@@ -24,9 +24,7 @@
 					<div class="post">
 						<div class="entry">
 							<?php the_content(); ?>
-                            <div class="scalingSideBar col s12 m4 l4 card noMarginTop">
-			<?php get_sidebar( "right" ); ?>
-                </div>
+                           
 							<div class="postmetadata">
 								<?php 	
 									wp_link_pages(array(
