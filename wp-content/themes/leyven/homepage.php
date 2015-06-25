@@ -7,13 +7,9 @@
 	<div id="the_heading">
 		<div class="the_heading the_width">
 			<div class="slider">
-                 <?php $title = get_the_title();
-                    if (is_front_page()) {
+                     <?php
                  include('slides/home/slides-home.php'); 
-                    }else if($title == "Bookkeeping"){
-                        include('slides/bookkeeping/slides-bookkeeping.php'); 
-                    };
-                        ?>
+               ?>
             </div>
 		</div>
 	</div>

@@ -58,5 +58,5 @@ if ( is_404() ) {
                     
                 </nav>
                     </div>
-				<div class="the_clear"></div>
+				
 				<div id="the_mid">

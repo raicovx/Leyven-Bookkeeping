@@ -635,11 +635,16 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 	width:auto;
 }
 
-.the_footer_menu ul.menu > li {
+/*.the_footer_menu ul.menu > li {
 	vertical-align: top;
     display: inline-block;
+}*/
+.the_footer_menu div li {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
 }
-
 .the_footer_menu ul.menu li a {
 	display: block;
 	padding: 0 1em;
@@ -697,7 +702,7 @@ ul.nav li ul li:hover ul, ul.nav li ul li ul li:hover ul, ul.nav li ul li ul li 
 
 .the_footer_line {
 	background-color: #FF5A00;
-	height: 37px;
+	height: 79px;
 }
 
 .the_footer_line a {

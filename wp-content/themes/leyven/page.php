@@ -8,6 +8,7 @@
 		<div class="the_heading">
 			 <div class="slider">
                  <?php $title = get_the_title();
+			echo $slider;
                     if (is_front_page()) {
                  include('slides/home/slides-home.php'); 
                     }else if($title == "Bookkeeping"){
@@ -15,7 +16,9 @@
                       
                                             
                         ?>  <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/leyven-2/css/bookkeeping.css" />
-                <?php };?>
+                <?php }else if($title == "New Home"){
+			 include('slides/home/slides-home.php');
+		};?>
             </div>
 		</div>
 	</div>
