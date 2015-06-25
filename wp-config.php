@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'leyve_db');
+define('DB_NAME', 'phoen169_leyve');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'phoen169_leyven');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'seD37Kn!6');
+define('DB_PASSWORD', 'R4ic0v40337843!');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -78,8 +78,8 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
-
+define('WP_DEBUG', true);
+define( 'WP_DEBUG_DISPLAY', true );
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

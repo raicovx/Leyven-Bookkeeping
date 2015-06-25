@@ -292,7 +292,7 @@ h3 {
     }
 }
 /* grey background on buttons issue override */
-.page-id-337 .left{
+.home .left{
    background:none!important; 
 }   
 #blog {
@@ -1131,43 +1131,43 @@ a img {
 
 /* home page css start */
 
-.page-id-337 .the_main {
+.home .the_main {
 	width:70%;
 	padding: 0;
     margin-left: 16%;
 }
 
-.page-id-337 .the_main #blog {
+.home .the_main #blog {
 	padding: 0;
 }
 
-.page-id-337 .post_title {
+.home .post_title {
 	display: none;
 }
 
-.page-id-337 .slider {
+.home .slider {
 	position: relative;
 }
 
-.page-id-337 .page-left {
+.home .page-left {
 	float: left;
 	width: 50%;
 	margin-top: 10px;
 }
 
-.page-id-337 .left-title {
+.home .left-title {
     background: #ff5a00;
     height: auto;
     width: 100%;
     padding-left: 15px;
     padding-bottom: 5px;
 }
-.page-id-337 .left-title h4{
+.home .left-title h4{
     line-height:1.7rem;
     font: 500 16px 'Roboto', sans-serif;
 }
 
-.page-id-337 .left {
+.home .left {
 	background: none repeat scroll 0 0 #E1E2E6;
     height: auto;
     width: 100%;
@@ -1189,21 +1189,21 @@ a img {
 a:link, a:visited{
        color:#FFF;
 }
-.page-id-337 .left p{
+.home .left p{
     font: 300 15px 'Roboto', sans-serif;
     margin-bottom: 10px;
     margin-left: 7px;
     margin-top: 10px;
 
 }
-.page-id-337 .left p.topText{
+.home .left p.topText{
     font: 400 15px 'Roboto', sans-serif;
     margin-bottom: 10px;
     margin-left: 7px;
     margin-top: 10px;
 }
 
-.page-id-337 .left-content {
+.home .left-content {
     color: #484852;
     height: auto;
     padding-bottom: 10px;
@@ -1212,7 +1212,7 @@ a:link, a:visited{
     width: 95%;
 }
 
-.page-id-337 .left .box {
+.home .left .box {
 	background: #3e3e3e;
     color:#FFF;
     list-style-type: none;
@@ -1234,27 +1234,27 @@ a:link, a:visited{
 p.contact{
     padding-top: 15px;   
 }
-.page-id-337 .message {
+.home .message {
 	float: right;
 	margin-top: -15px;
 	margin-right: 7px;
 }
 
-.page-id-337 .left .box p {
+.home .left .box p {
 	margin-top: 7px;
 	font-size: 13px;
     margin-right: 7px;
 }
 
-.page-id-337 .page-right {
+.home .page-right {
 }
-.page-id-337 .buttons {
+.home .buttons {
 	width: 463px;
 	margin-top: 10px;
 	height: 100px;
 }
 
-.page-id-337 .services{
+.home .services{
     color:#FFF;
 background: #fc7e00; /* Old browsers */
 background: -moz-linear-gradient(top, #fc7e00 0%, #ff5a00 100%); /* FF3.6+ */
@@ -1268,7 +1268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7e00', end
     margin-top:10px; 
    
 }
-.page-id-337 .services:first-child{
+.home .services:first-child{
      margin-left:-3px!important;
 }
 .services h3{
@@ -1278,7 +1278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7e00', end
     margin-left: 10px!important;
     min-height:540px;
 }
-.page-id-337 .buttons h3 {
+.home .buttons h3 {
 	margin-top: 0 !important;
     padding-top: 35px;
 	text-align: center;
@@ -1286,36 +1286,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7e00', end
 	font-size: 30px;
 }
 
-.page-id-337 h2 {
+.home h2 {
 	color: #ff5a00 !important;
 	font: 500 22px 'Roboto', sans-serif;
 	margin-top: 15px;
 }
 
-.page-id-337 .second {
+.home .second {
 	color: #ff5a00 !important;
 	font-size: 17px;
 }
 
-.page-id-337 .right-content p {
+.home .right-content p {
 	color: #FFF; 
     font: 400 15px 'Roboto',sans-serif;
 	margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.page-id-337 .right-content {
+.home .right-content {
 	line-height: 17px;
 }
-.page-id-337 .right-content a{
+.home .right-content a{
 	color:#ff5a00;
 }
-.page-id-337 .right-content a:hover{
+.home .right-content a:hover{
 	color:#FA8A00;
 }
 
 
-.page-id-337 h4 {
+.home h4 {
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 0;
@@ -1522,7 +1522,7 @@ margin-bottom: 10px;
     margin-left:10px;
 }
 @media (max-width: 975px){
-  .page-id-337 .the_main{
+  .home .the_main{
       width:90%;
     margin:0 0 0 9%;
   }
@@ -1532,7 +1532,7 @@ margin-bottom: 10px;
     width:100%!important;
     height: 450px!important;   
 }
-     .page-id-337 .the_main{
+     .home .the_main{
          width:90%;
     margin:0 0 0 7%;
   }
@@ -1565,7 +1565,7 @@ margin-bottom: 10px;
     
 }
 @media (max-width: 770px){
-    .page-id-337 .services  {
+    .home .services  {
         width:49%!important;
     }
 }

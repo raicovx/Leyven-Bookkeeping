@@ -14,7 +14,7 @@
                         include('slides/bookkeeping/slides-bookkeeping.php'); 
                       
                                             
-                        ?>  <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/leyven/css/bookkeeping.css" />
+                        ?>  <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/leyven-2/css/bookkeeping.css" />
                 <?php };?>
             </div>
 		</div>
